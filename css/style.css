@@ -1,0 +1,109 @@
+/*
+    COLOR SCHEME: #283044,  #78A1BB, #EBF5EE, #BFA89E, #8B786D
+                  olive     blue     white    azure    pearl-aqua
+*/
+
+:root {
+    --black-olive: #3B413C;
+    --blue: #9DB5B2;
+    --white: #FFFFFF;
+    --azure-white: #DAF0EE;
+    --pearl-aqua: #94D1BE;
+    font-family: monaco, Consolas, Lucida Console, monospace;
+}
+
+
+.header {
+    text-align: center;
+    color: var(--black-olive);
+}
+
+.header h1{
+
+}
+
+/* Add background color to the top navigation */
+.topnav {
+    background-color: var(--blue);
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    /*
+    
+    */
+    
+    float: left;
+    color: var(--white);
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+
+    
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--black-olive);
+    color: var(--white);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--black-olive);
+    color: var(--white);
+}
+
+.content {
+    color: var(--black-olive)
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.img-container {
+    /*
+    padding-left: 5%;
+    text-align: left;
+    */
+}
+
+.image {
+    display: inline-block;
+    vertical-align: top;
+}
+.image:hover {
+    background-color: black;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+#education {
+    padding: 20px 20px;
+    background-color: var(--white);
+}
+
+#languages {
+    padding: 20px 20px;
+    background-color: var(--white);
+}
+
+#hobbies {
+    padding: 20px 20px;
+    background-color: var(--white);
+}
+
+p {
+    margin-left: 0px;
+    overflow: auto;
+    display: block;
+}
+
+div {
+    
+}
