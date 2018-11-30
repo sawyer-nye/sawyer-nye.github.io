@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Sawyer Nye</title>
-
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="css/style.css">
         <!-- Favicons -->
         <link rel="icon" href="img/favicon.ico">
@@ -13,7 +14,7 @@
         <div class="header">
 
             <h1>Sawyer Nye's Website</h1>
-            <div class="topnav">
+            <div class="topnav" id="topnav">
                 <a class="active" href="#home">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
@@ -36,7 +37,9 @@
                     <p>GPA: 3.81</p>
                     <p>2017-2021</p>
                     <h4>Relevant Course Work:</h4>
-                    <p>CMPSC 121, CMPSC 132, CMPEN 270, etc.</p>
+                    <div class="hidden">
+                        <p>CMPSC 121, CMPSC 132, CMPEN 270, etc.</p>
+                    </div>
                 </div>
 
                 
@@ -45,7 +48,14 @@
 
             <div id="languages">
                 <h1>LANGUAGES</h1>
-                <h3>Python</h3>
+
+                <div class="image">
+                    <img src="img/py.png" height="150px">
+                </div>
+
+                <div class="inline-block">
+                    <h3>Python</h3>
+                </div>
             </div>
 
             <div id="hobbies">
@@ -57,5 +67,8 @@
         <div class="footer">
 
         </div>
+
+        <script src="js/sticky_header.js"></script>
+
     </body>
 </html>

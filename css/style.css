@@ -16,58 +16,49 @@
 .header {
     text-align: center;
     color: var(--black-olive);
+    background-color: var(--azure-white);
 }
 
-.header h1{
-
-}
 
 /* Add background color to the top navigation */
-.topnav {
+#topnav {
     background-color: var(--blue);
     overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
-.topnav a {
-    /*
-    
-    */
-    
+#topnav a {  
     float: left;
     color: var(--white);
     text-align: center;
     padding: 20px 20px;
     text-decoration: none;
-    font-size: 20px;
-
-    
+    font-size: 20px;   
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+#topnav a:hover {
     background-color: var(--black-olive);
     color: var(--white);
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+#topnav a.active {
     background-color: var(--black-olive);
     color: var(--white);
 }
 
 .content {
-    color: var(--black-olive)
+    color: var(--black-olive);
 }
 
 .content h1 {
     text-align: center;
 }
 
-.img-container {
-    /*
-    padding-left: 5%;
-    text-align: left;
+.hidden {
+    /*display: none;
+        change this with javascript onclick
     */
 }
 
@@ -84,18 +75,33 @@
 }
 
 #education {
-    padding: 20px 20px;
+    padding: 20px 40px;
     background-color: var(--white);
 }
 
 #languages {
-    padding: 20px 20px;
+    padding: 20px 40px;
     background-color: var(--white);
 }
 
 #hobbies {
-    padding: 20px 20px;
+    padding: 20px 40px;
     background-color: var(--white);
+}
+
+.footer {
+    background-color: var(--azure-white);
+    padding: 250px 40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+.sticky + .content {
+    padding-top: 102px;
 }
 
 p {
@@ -105,5 +111,5 @@ p {
 }
 
 div {
-    
+    /*border: .5px solid #666;*/
 }
