@@ -12,7 +12,6 @@
 
     <body>
         <div class="header">
-
             <h1>Sawyer Nye's Website</h1>
             <div class="topnav" id="topnav">
                 <a class="active" href="#home">Home</a>
@@ -20,25 +19,26 @@
                 <a href="#contact">Contact</a>
                 <a href="#resume">Resum&eacute;</a>
             </div>
-            
         </div>
 
         <div class="content">
 
             <div id="education">
                 <h1>EDUCATION</h1>
-                    
+                
+                <br>
+
                 <div class="image">
                     <img src="img/psu.jpg" height="200px">
                 </div>
 
-                <div class="inline-block">
+                <div id="psu" class="inline-block">
                     <h3>Pennsylvania State University</h3>
                     <p>GPA: 3.81</p>
                     <p>2017-2021</p>
-                    <h4>Relevant Course Work:</h4>
-                    <div class="hidden">
-                        <p>CMPSC 121, CMPSC 132, CMPEN 270, etc.</p>
+                    <h4 id="course-toggle" onclick="toggleCourseWork()">Relevant Course Work:</h4>
+                    <div class="hidden" id="coursework">
+                        <p>CMPSC 121, CMPSC 132, CMPEN 270, CMPSC 221, CMPSC 360</p>
                     </div>
                 </div>
 
@@ -48,18 +48,42 @@
 
             <div id="languages">
                 <h1>LANGUAGES</h1>
-
-                <div class="image">
-                    <img src="img/py.png" height="150px">
-                </div>
-
-                <div class="inline-block">
-                    <h3>Python</h3>
+                
+                <br>
+                
+                <div id="lang-block">
+                    <div class="image">
+                        <img src="img/py.png" height="180px">
+                        <h3>Python</h3>
+                    </div>
+                    <div class="image">
+                        <img src="img/html.png" height="180px">
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="image">
+                        <img src="img/css.png" height="180px">
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="image">
+                        <img src="img/js.png" height="180px">
+                        <h3>JS</h3>
+                    </div>
+                    <div class="image">
+                        <img src="img/java.png" height="180px">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="image">
+                        <img src="img/cpp.png" height="180px">
+                        <h3>C++</h3>
+                    </div>
                 </div>
             </div>
 
             <div id="hobbies">
                 <h1>HOBBIES</h1>
+
+                <br>
+
                 <h3>Music Production</h3>
             </div>
         </div>
@@ -69,6 +93,7 @@
         </div>
 
         <script src="js/sticky_header.js"></script>
+        <script src="js/fnc.js"></script>
 
     </body>
 </html>
