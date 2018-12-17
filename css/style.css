@@ -1,28 +1,28 @@
-/*
-    COLOR SCHEME: #283044,  #78A1BB, #EBF5EE, #BFA89E, #8B786D
-                  olive     blue     white    azure    pearl-aqua
-*/
+* {
+    margin: 0;
+    padding: 0;
+}
 
 :root {
     --black-olive: #3B413C;
-    --blue: #9DB5B2;
     --white: #FFFFFF;
-    --azure-white: #DAF0EE;
-    --pearl-aqua: #94D1BE;
+    --orange: #F2A400;
     font-family: monaco, Consolas, Lucida Console, monospace;
 }
-
 
 .header {
     text-align: center;
     color: var(--black-olive);
-    background-color: var(--azure-white);
 }
 
+.header h1 {
+    background-color: var(--orange);
+    color: white;
+}
 
 /* Add background color to the top navigation */
 #topnav {
-    background-color: var(--blue);
+    background-color: var(--orange);
     overflow: hidden;
 }
 
@@ -57,31 +57,46 @@
 }
 
 .hidden {
-    /*display: none;
-        change this with javascript onclick
-    */
+    display: none;    
 }
 
 .image {
     display: inline-block;
     vertical-align: top;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
-.image:hover {
-    background-color: black;
+
+.image h3 {
+    text-align: center;
 }
 
 .inline-block {
     display: inline-block;
 }
 
+.inline-block a:link, a:visited {
+    text-decoration: none;
+    color: var(--black-olive);
+}
+
+
 #education {
-    padding: 20px 40px;
+    padding: 20px 0px;
     background-color: var(--white);
 }
 
+#psu {
+    
+}
+
 #languages {
-    padding: 20px 40px;
+    padding: 20px 0px;
     background-color: var(--white);
+}
+
+#lang-block {
+    text-align: center;
 }
 
 #hobbies {
@@ -89,8 +104,12 @@
     background-color: var(--white);
 }
 
+#course-toggle {
+    cursor: pointer;
+}
+
 .footer {
-    background-color: var(--azure-white);
+    background-color: var(--orange);
     padding: 250px 40px;
 }
 
